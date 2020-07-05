@@ -1,0 +1,64 @@
+/*forms validate*/
+
+
+
+
+
+@keyframes fadeOut 
+
+    0%
+        opacity: 1
+    
+
+    100%
+        opacity: 0
+    
+
+.just-validate-tooltip-container 
+    position: relative
+
+
+.just-validate-tooltip-hide 
+    animation: fadeOut .5s linear
+    opacity: 0
+
+
+.js-validate-error-label 
+    position: absolute
+    bottom: -20px
+    left: 0
+    z-index: 10
+    background: black
+    border-radius: 4px
+    padding: 4px 8px
+    font-size: 16px
+    pointer-events: none
+    transition: all .4s linear
+
+
+.js-validate-error-field 
+    border-radius: 4px
+
+   
+
+
+.input
+    position: relative
+
+    +mq-till-lg ()
+        padding-bottom: 20px
+    &__
+        &body
+            width: 100%
+            padding: 20px 30px
+            border: 2px solid #dfdfdf
+            border-radius: 4px
+            background: rgba(255, 255, 255, 0.2)
+            font-size: 16px
+            color: #fff
+            &::placeholder
+                color: #d6d6d6
+            &--
+                &submit
+                    color: grey
+                    padding-right: 64px

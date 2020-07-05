@@ -1,0 +1,52 @@
+$color-light-grey: #f6f5f3 
+$color-grey: #292828
+$color-indigo: #323969
+$color-white: white
+$image: url('') no repeat
+
+
+.section
+    overflow: hidden
+    &--
+        &bg_grey
+            background: $color-grey
+        &bg_white
+            background: $color-white
+        &bg_light_grey
+            background: $color-light-grey
+        &bg_indigo
+            background: $color-indigo  
+        &bg_image_1
+            background: url(../img/bg1.png) no-repeat
+            background-size: cover
+        &bg_image_2
+            background: url(../img/bg2.png) no-repeat  
+            background-size: 100% 100%
+        &bg_3
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                height: 100%
+                width: 100%
+                background: #ff8a8a
+                clip-path: polygon(0 0, 4% 0, 30% 100%, 0% 100%)
+        &bg_image_3
+            background: url(../img/bg3.png) no-repeat
+            background-size: cover
+        &bg_4
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                height: 100%
+                width: 100%
+                background: #ff8a8a
+                clip-path: polygon(75% 0, 100% 0, 100% 100%, 99% 100%)
+          
+       
+

@@ -1,0 +1,48 @@
+$screen-sm: 768px
+$screen-md: 992px
+$screen-lg: 1200px
+
+@mixin red 
+    &:hover
+        background: #d36b6b
+        transition: 0.5s
+
+
+.button 
+    width: 100%
+    position: relative
+
+    &--
+        
+        &bg_blue
+            background-color: #8286a3
+            +red
+        &bg_red
+            background-color: #ff6d6d
+            +red
+        &space_l
+            padding: 20px
+        &border_radius
+            border-radius: 4px
+        &transparent
+            background: transparent
+        &shadow
+            box-shadow: 0px 2px 4px #161616
+        &border_light_grey
+            border: 1px solid  #e7e6e6
+            border-left: none
+            border-radius: 0 4px 4px 0
+            height: 44px
+        &rounded
+            display: block
+            margin: 0 auto
+            border-radius: 50%
+            height: 60px
+            width: 60px
+        &mail
+            position: absolute
+            top: 2px
+            right: 0
+            height: 60px
+            width: 56px
+   
