@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
         });
         promise.then(response => out1.innerHTML = response)
-        out1.classList.add('card', 'card--space_bottom_l', 'card-js');
+        out1.classList.add('card', 'card--space_bottom_m', 'card-js');
 
         if (!document.querySelector('.card-js')) {
             document.querySelector('.cell--js').appendChild(out1);
@@ -61,6 +61,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 maxLength: 20
             },
             password: {
+                strength: {
+                    default: true
+                },
                 required: true,
                 password: true,
                 minLength: 4,
