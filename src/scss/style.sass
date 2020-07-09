@@ -1,4 +1,4 @@
-@import "nullstyle.scss", "media/index.sass", "inputs.sass", "buttons.sass", "section.sass", "columns.sass", "container.sass", "flex.sass", "caption.sass"
+@import "nullstyle.scss", "media/index.sass", "inputs.sass", "buttons.sass", "section.sass", "columns.sass", "container.sass", "flex.sass", "caption.sass", "modal.sass"
 
 
 $space-1: 4px
@@ -10,13 +10,16 @@ $space-6: 44px
     
 body 
     font-family: 'Exo', sans-serif
-
+    &.is-active
+        overflow: hidden
    
 
 
 .card
     width: 100%
     &--
+        &space_bottom_s
+            padding-bottom: 20px
         &space_bottom_m
             padding-bottom: 40px
         &space_bottom_l
@@ -25,8 +28,10 @@ body
             padding-bottom: 84px
         &space_bottom_xxl
             padding-bottom: 164px
+        &space_top_s
+            padding-top: 20px
         &space_top_xl
-            padding-top: 104px
+            padding-top: 104px   
         &space_top_xxl
             padding-top: 188px                
     &__
@@ -83,6 +88,9 @@ body
             color: #fff
         &color_grey
             color: #afabab
+            &:hover
+                transition: 1s
+                color: #d36b6b
         &size_l
             font-size: 24px    
         &position
