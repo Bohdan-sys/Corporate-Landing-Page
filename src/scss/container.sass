@@ -3,14 +3,13 @@ $mq-medium: 768px
 $mq-large: 992px
 $mq-ex-large: 1200px
 
-    
 $space-s: 28px
 $space-m: 40px
 $space-l: 96px
 $space-xl: 140px
 $space-xxl: 228px
 
-%center 
+%center
     max-width: 100%
     margin: 0 auto
 
@@ -35,8 +34,12 @@ $space-xxl: 228px
                 padding: $space-s 4px
         &space_l
             padding: $space-l 4px
+            +mq-till-md()
+                padding: $space-l - 56px 4px
         &space_xl
-            padding: $space-xl 4px    
+            padding: $space-xl 4px
+            +mq-till-md()
+                padding: $space-xl - 80px 4px
         &space_xxl
             padding: $space-xxl - 200px 4px
             +mq-md ()
