@@ -2,31 +2,6 @@
 @@include('modal.js');
 
 window.addEventListener('DOMContentLoaded', function () {
-    //create block
-    /*   const playBtn = document.querySelector('.button--modal-js');
-   
-       playBtn.addEventListener('click', () => {
-   
-           let out1 = document.createElement('div');
-   
-           let promise = new Promise((resolve, reject) => {
-               fetch('iframe.html', {
-                   method: "GET",
-               })
-                   .then(response => {
-                       resolve(response.text())
-                   })
-           });
-           promise.then(response => out1.innerHTML = response)
-           out1.classList.add('card', 'card--space_bottom_m', 'card-js');
-           let card = document.querySelector('.card-js');
-           if (!card) {
-               document.querySelector('.cell--js').appendChild(out1);
-           } else {
-               card.remove();
-           };
-       });*/
-
 
     //modal
 
