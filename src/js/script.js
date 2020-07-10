@@ -5,9 +5,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //modal
 
-    openBtn.addEventListener('click', opener);
-    closeBtn.addEventListener('click', closer);
-    this.addEventListener('click', event => { event.target == modal ? closer() : false });
+    openBtn.addEventListener('click', () => openAndInject('iframe.html'));
+    closeBtn.addEventListener('click', () => toggleContent(''));
+    this.addEventListener('mouseup', e => { e.target == modal ? toggleContent('') : false });
+
+    // openBtn.addEventListener('click', opener);
+    // closeBtn.addEventListener('click', closer);
+    // this.addEventListener('click', event => { event.target == modal ? closer() : false });
 
     //validator
 
