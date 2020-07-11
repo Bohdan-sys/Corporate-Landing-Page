@@ -1090,9 +1090,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     window.JustValidate = JustValidate;
 })(window);;
-let openBtn = document.querySelector('.button--modal-js'),
-    closeBtn = document.querySelector('.button--close-js'),
-    modal = document.querySelector('.modal-js'),
+let openBtn = document.querySelector('.js-button--modal'),
+    closeBtn = document.querySelector('.js-button--close'),
+    modal = document.querySelector('.js-modal'),
     body = document.querySelector('body');
 
 const getData = (url, method) => {
@@ -1110,8 +1110,8 @@ const toggleClass =
 const setModalContent =
     string =>
         document
-            .querySelector('.modal-js')
-            .querySelector('.modal__container--wrapper-js')
+            .querySelector('.js-modal')
+            .querySelector('.js-modal__container--wrapper')
             .innerHTML = string;
 
 
