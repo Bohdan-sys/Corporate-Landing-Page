@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
     closeBtn.addEventListener('click', () => toggleContent(''));
     this.addEventListener('click', e => {
         console.log(e)
-        e.target == modal || e.toElement == modal || e.toElement == modal ? toggleContent('') : false
+        e.target == modal || e.srcElement == modal || e.toElement == modal ? toggleContent('') : false
     });
 
     // openBtn.addEventListener('click', opener);
