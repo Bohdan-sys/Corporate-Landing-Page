@@ -1191,7 +1191,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     openBtn.addEventListener('click', () => openAndInject('iframe.html'));
     closeBtn.addEventListener('click', () => toggleContent(''));
-    this.addEventListener('mouseup', e => { e.target == modal ? toggleContent('') : false });
+    this.addEventListener('click', e => {
+        console.log(e)
+        e.target == modal || e.toElement == modal || e.toElement == modal ? toggleContent('') : false
+    });
 
     // openBtn.addEventListener('click', opener);
     // closeBtn.addEventListener('click', closer);
